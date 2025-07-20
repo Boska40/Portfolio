@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "About Me";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4">About Me</h2>
+    <h4>Who I Am?</h4>
+    <p data-aos="zoom-out-left">
+        I'm a passionate and detail-oriented digital professional with a strong focus on web development, design, and IT support. 
+        With a creative mindset and a problem-solving approach, I enjoy turning complex challenges into user-friendly digital solutions. 
+        Whether working independently or as part of a team, I’m committed to delivering high-quality work that adds real value.
+    </p>
+    <p data-aos="zoom-out-down">
+        I'm constantly learning and evolving—driven by curiosity, innovation, and a desire to help businesses grow through technology.
+    </p>
+    
+    <div id="education-container" class="row row-cols-1 row-cols-md-2 g-4 p-5 mt-5 rounded-3 shadow" style="background:#203D60" data-aos="fade-left">
+        <script>
+            fetch('/data/features.json') // <- on va chercher à la racine
+              .then(response => response.json())
+              .then(data => {
+                const container = document.getElementById('education-container');
+                data.education.forEach(entry => {
+                  const div = document.createElement('div');
+                  div.className = 'col';
+                  div.innerHTML = `
+                    <div class="card h-100 shadow-lg p-3" style="background:#203D60">
+                      <div class="d-flex justify-content-between fw-bold mb-2">
+                        <span  style="color:#2E86C1">${entry.diploma}</span>
+                        <span  style="color:#2E86C1">${entry.year}</span>
+                      </div>
+                      <h6 class="text-white-50">${entry.school}</h6>
+                      <p class="mt-2 mb-0 text-white">${entry.content}</p>
+                    </div>
+                  `;
+                  container.appendChild(div);
+                });
+              })
+              .catch(error => console.error('Erreur lors du chargement de /data.json :', error));
+        </script>
+
+    </div>
+</div>

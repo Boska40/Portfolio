@@ -1,0 +1,274 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="main">
+    <div class="row">
+        <div class="col-12">
+            @*Hero Section*@
+            <div class="Hero container-fluid shadow-lg rounded-3 p-5 d-flex flex-column flex-md-row align-items-center justify-content-between gap-4" data-aos="zoom-in">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="text-primary">______ Hello and welcome! ______</p>
+                    <h4 class="text-white">HI, I am <strong><span class="text-primary">Stéphane TSALA</span></strong></h4>
+                    <h3 class="text-info">WEB DEVELOPER</h3>
+                    <p class="text-white">
+                        I’m a junior web developer and digital enthusiast, passionate about building smart, efficient, and impactful solutions. 
+                        I work with some popular technologies, and also explore database and UI/UX design
+                    </p>
+                    <p class="text-white-50">
+                        I’m currently involved in developing digital tools for businesses, especially in logistics and social impact sectors. 
+                        I'm always looking to grow through new challenges and meaningful collaborations.
+                    </p>
+                    <p class="text-white">Feel free to explore my work, and don’t hesitate to contact me for any collaboration or project idea!</p>
+                    <a href="~/assets/CV Stéphane TSALA - CS_WD.pdf" class="btn btn-primary shadow w-50 w-md-100 rounded-pill" download>
+                        <i class="fa fa-cloud-download"></i> Download my resume
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 text-center" data-aos="zoom-out-right">
+                    <img src="~/assets/logoST-removebg-preview.png" class="img-fluid" alt="Stephane Logo" />
+                </div>
+            </div>
+
+            @*work environment section*@
+            <div class="Work_environment p-5 container-fluid shadow-lg rounded-3 align-items-center justify-content-between gap-4" data-aos="fade-down">
+                <div class="sectionName text-white-50 text-center">
+                    <h3 class="text-center">My Work <span class="fw-bold" style="color:#2E86C1">Environment</span></h3>
+                    <p class="text-white-50">
+                        I work in a clean, well-organized, and fully equipped environment that fosters creativity and productivity.
+                        From powerful development tools to a stable internet connection and modern hardware,
+                        my setup allows me to deliver high-quality work efficiently and consistently.
+                    </p>
+                    </div>
+                <div class="Frontend mt-5">
+                    @* <div class="title"><h4 class="text-white text-center">FRONTEND</h4></div> *@
+                    <div class="items row g-4 mt-3 d-flex flex-wrap" id="featuresContainer">
+                        <script>
+                            fetch('/data/features.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                const container = document.getElementById('featuresContainer');
+
+                                data.technologies.forEach(item => {
+                                  // on génère une carte par technologie
+                                  container.innerHTML += `
+                                    <div class="card col-md-4 align-items-center justify-content-between shadow-lg p-5" style="background:#17202A">
+                                      <img src="${item.logo.replace('~', '')}" class="card-img-top" alt="${item.id}" style="height:100px; width:100px">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-white-50">${item.id}</h5>
+                                      </div>
+                                    </div>
+                                  `;
+                                });
+                              })
+                              .catch(error => console.error("Erreur lors du chargement des données :", error));
+                        </script>
+                    </div>
+                </div>
+                <div class="Backend mt-5">
+                    @* <div class="title"><h4 class="text-white text-center">BACKEND</h4></div> *@
+                    <div class="items row g-4 mt-3 d-flex flex-wrap" id="featuresContainer">
+                        <script>
+                            fetch('/data/features.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                const container = document.getElementById('featuresContainer');
+
+                                data.backend.forEach(item => {
+                                  // on génère une carte par technologie
+                                  container.innerHTML += `
+                                    <div class="card col-md-4 align-items-center justify-content-between shadow-lg p-5" style="background:#17202A">
+                                      <img src="${item.logo.replace('~', '')}" class="card-img-top" alt="${item.id}" style="height:100px; width:100px">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-white-50">${item.id}</h5>
+                                      </div>
+                                    </div>
+                                  `;
+                                });
+                              })
+                              .catch(error => console.error("Erreur lors du chargement des données :", error));
+                        </script>
+                    </div>
+                </div>
+                <div class="databases mt-5">
+                    @* <div class="title"><h4 class="text-white text-center">BACKEND</h4></div> *@
+                    <div class="items row g-4 mt-3 d-flex flex-wrap" id="featuresContainer">
+                        <script>
+                            fetch('/data/features.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                const container = document.getElementById('featuresContainer');
+
+                                data.databases.forEach(item => {
+                                  // on génère une carte par technologie
+                                  container.innerHTML += `
+                                    <div class="card col-md-4 align-items-center justify-content-between shadow-lg p-5" style="background:#17202A">
+                                      <img src="${item.logo.replace('~', '')}" class="card-img-top" alt="${item.id}" style="height:100px; width:100px">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-white-50">${item.id}</h5>
+                                      </div>
+                                    </div>
+                                  `;
+                                });
+                              })
+                              .catch(error => console.error("Erreur lors du chargement des données :", error));
+                        </script>
+                    </div>
+                </div>
+                <div class="hosting mt-5">
+                    @* <div class="title"><h4 class="text-white text-center">BACKEND</h4></div> *@
+                    <div class="items row g-4 mt-3 d-flex flex-wrap" id="featuresContainer">
+                        <script>
+                            fetch('/data/features.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                const container = document.getElementById('featuresContainer');
+
+                                data.hosting.forEach(item => {
+                                  // on génère une carte par technologie
+                                  container.innerHTML += `
+                                    <div class="card col-md-4 align-items-center justify-content-between shadow-lg p-5" style="background:#17202A">
+                                      <img src="${item.logo.replace('~', '')}" class="card-img-top" alt="${item.id}" style="height:100px; width:100px">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-white-50">${item.id}</h5>
+                                      </div>
+                                    </div>
+                                  `;
+                                });
+                              })
+                              .catch(error => console.error("Erreur lors du chargement des données :", error));
+                        </script>
+                    </div>
+                </div>
+                <div class="OtherTech mt-5">
+                    @* <div class="title"><h4 class="text-white text-center">Other Technologies</h4></div> *@
+                    <div class="items row g-4 mt-3 d-flex flex-wrap" id="featuresContainer">
+                        <script>
+                            fetch('/data/features.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                const container = document.getElementById('featuresContainer');
+
+                                data.OtherTech.forEach(item => {
+                                  // on génère une carte par technologie
+                                  container.innerHTML += `
+                                    <div class="card col-md-4 align-items-center justify-content-between shadow-lg p-5" style="background:#17202A">
+                                      <img src="${item.logo.replace('~', '')}" class="card-img-top" alt="${item.id}" style="height:100px; width:100px">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-white-50">${item.id}</h5>
+                                      </div>
+                                    </div>
+                                  `;
+                                });
+                              })
+                              .catch(error => console.error("Erreur lors du chargement des données :", error));
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            @*testimonial section*@
+            <div class="testimonial p-5 container-fluid shadow-lg rounded-3 align-items-center justify-content-between gap-4" data-aos="fade-left">
+                <div class="sectionName text-dark text-center"><h3 class="text-center">What My Clients <span class="fw-bold" style="color:#2E86C1">Say?</span></h3></div>
+                <div class="row mt-5" id="testimonialContainer">
+                    <script>
+                        fetch('/data/features.json')
+                          .then(response => response.json())
+                          .then(data => {
+                            const container = document.getElementById('testimonialContainer');
+
+                            data.costumers.forEach(person => {
+                              container.innerHTML += `
+                                <div class="col-md-4 mb-4">
+                                  <div class="card h-100 shadow-sm">
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center mb-3">
+                                        <img src="${person.photo.replace('~', '')}" alt="Photo of ${person.name}" class="rounded-circle me-3" width="50" height="50">
+                                        <div>
+                                          <h6 class="mb-0">${person.name}</h6>
+                                          <small class="" style="color:#2E86C1">${person.company}</small>
+                                        </div>
+                                      </div>
+                                      <p class="card-text">"${person.testimonial}"</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              `;
+                            });
+                          })
+                          .catch(error => console.error("Erreur de chargement des témoignages :", error));
+                    </script>
+
+                </div>
+            </div>
+
+            @*prices sections*@
+            <div class="prices p-5 container-fluid shadow-lg mb-3 rounded-3 align-items-center justify-content-between gap-4" data-aos="zoom-in">
+                <div class="sectionName text-dark text-center"><h3 class="text-center">My <span class="fw-bold" style="color:#ffffff">Prices</span></h3></div>
+                <h4 class="text-center text-white-50">Transparent and Flexible Pricing</h4>
+                <p class="text-center text-white-50">
+                    I offer clear and flexible pricing plans tailored to your project needs.
+                    Whether you’re looking for a basic website, a custom web app, or digital strategy support,
+                    I’ll work with you to find the most cost-effective solution without compromising on quality.
+                </p>
+                <div class="container my-5">
+                    <div class="row" id="servicesContainer"></div>
+                </div>
+
+                <script>
+                    fetch('/data/features.json')
+                      .then(response => response.json())
+                      .then(data => {
+                        const container = document.getElementById('servicesContainer');
+
+                        if (!data.services || !Array.isArray(data.services)) {
+                          console.error("Données de services manquantes ou mal formées.");
+                          return;
+                        }
+
+                        data.services.forEach(service => {
+                          container.innerHTML += `
+                            <div class="col-md-4 col-sm-6 mb-4">
+                              <div class="card h-100 shadow rounded-3">
+                                <img src="${service.image}" class="card-img-top" alt="${service.service}" style="height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                  <h6 class="card-title text-center">${service.service}</h6>
+                                  <p class="text-center" style="color:#2E86C1">${service.Price.toLocaleString()} FCFA</p>
+                                  <a href="https://wa.me/+237656531016" class="btn btn-success mt-auto shadow text-white fw-bold" target="_blank">Book Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          `;
+                        });
+                      })
+                      .catch(error => console.error('Erreur chargement services :', error));
+                </script>
+
+            </div>
+
+            @*follow me*@
+            <div class="container-fluid shadow-lg p-5 rounded-3 align-items-center justify-content-between gap-4 text-center" style="background:#203D60" data-aos="fade-right">
+                <div class="sectionName text-white text-center"><h3 class="text-center">Follow <span class="fw-bold" style="color:#2E86C1">Me</span></h3></div>
+                <h4 class="text-white-50">Stay connected!</h4>
+                <p class="text-white-50">
+                    Follow me on social media to discover my latest projects, design inspirations, and tech updates.
+                    Let’s build something great together!
+                </p>
+                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                    <a href="https://github.com/Boska40" target="_blank" class="text-dark fs-3">
+                        Github <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/stephane-tsala/" target="_blank" class="text-primary fs-3">
+                        LinkedIn <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://web.facebook.com/stephane.boska" target="_blank" class="text-primary fs-3">
+                        Facebook <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/stephane.boska/" target="_blank" class="text-danger fs-3">
+                        Instagram <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

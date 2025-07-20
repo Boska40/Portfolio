@@ -1,0 +1,280 @@
+﻿{
+  "costumers": [
+    {
+      "name": "C. DOUNGUE, Esq",
+      "company": "DOUNGUE & PARTNERS",
+      "photo": "/assets/user.png",
+      "testimonial": "Working with Stephane was a real pleasure. She quickly understood our needs and delivered a clean, responsive website that perfectly reflects our brand. Her attention to detail, communication skills, and technical expertise are outstanding. I highly recommend her for any web development project."
+    },
+    {
+      "name": "Mr. BOUGUEN Jean Bernard",
+      "company": "NGO OABA",
+      "photo": "/assets/user.png",
+      "testimonial": "I had the opportunity to work with Stephane on a logistics platform project. Her ability to manage both the front-end and back-end with precision is impressive. Beyond her technical skills, she's proactive, a great team player, and always open to feedback. She made the project smooth and enjoyable from start to finish."
+    },
+    {
+      "name": "Mrs. Josephine DEUGA",
+      "company": "NGO APPE CAMEROUN",
+      "photo": "/assets/user.png",
+      "testimonial": "Stephane is a highly motivated and talented developer. She shows great initiative, learns quickly, and always goes the extra mile to deliver functional and elegant solutions. Any team would be lucky to have her as part of their web development force."
+    }
+  ],
+
+
+  "technologies": [
+    {
+      "id": "Blazor",
+      "logo": "/assets/blazor-tutorial-for-beginners.png"
+    },
+    {
+      "id": "Razor Pages",
+      "logo": "/assets/razor_pages-removebg-preview.png"
+    },
+    {
+      "id": "React Js",
+      "logo": "/assets/React.png"
+    },
+    {
+      "id": "HTML",
+      "logo": "/assets/html.png"
+    },
+    {
+      "id": "CSS",
+      "logo": "/assets/css.png"
+    },
+    {
+      "id": "Blazor",
+      "logo": "/assets/js.png"
+    }
+  ],
+
+  "backend": [
+    {
+      "id": "C#",
+      "logo": "/assets/C_Sharp_Logo_2023.svg.png"
+    },
+    {
+      "id": "Entity Framework",
+      "logo": "/assets/NET_Core_Logo.svg.png"
+    },
+    {
+      "id": "ASP.NET Core MVC",
+      "logo": "/assets/NET_Core_Logo.svg.png"
+    },
+    {
+      "id": "ASP.NET Core Web API",
+      "logo": "/assets/NET_Core_Logo.svg.png"
+    }
+  ],
+
+  "OtherTech": [
+    {
+      "id": "Wordpress",
+      "logo": "/assets/WordPress_blue_logo.svg.png"
+    },
+    {
+      "id": "Figma",
+      "logo": "/assets/figma-removebg-preview.png"
+    },
+    {
+      "id": "Github",
+      "logo": "/assets/GitHub-Logo.png"
+    },
+    {
+      "id": "Git",
+      "logo": "/assets/git.png"
+    },
+    {
+      "id": "Canva",
+      "logo": "/assets/Canva-Logo-Transparent-1024x576.png"
+    }
+  ],
+
+  "databases": [
+    {
+      "id": "SQL SERVER",
+      "logo": "/assets/MSSQLServer-removebg-preview.png"
+    },
+    {
+      "id": "MySQL",
+      "logo": "/assets/MySQL-removebg-preview.png"
+    },
+    {
+      "id": "PostgreSQL",
+      "logo": "/assets/postgresql-removebg-preview.png"
+    }
+  ],
+
+  "hosting": [
+    {
+      "id": "Azure",
+      "logo": "/assets/Microsoft_Azure.svg.png"
+    },
+    {
+      "id": "Microsoft IIS",
+      "logo": "/assets/ms-iis-large.png"
+    }
+  ],
+
+  "services": [
+    {
+      "service": "Web Application",
+      "Price": 700000,
+      "image": "/assets/web-app.jpg"
+    },
+    {
+      "service": "E-commerce",
+      "Price": 400000,
+      "image": "/assets/e-commerce.jpg"
+    },
+    {
+      "service": "Company Website",
+      "Price": 250000,
+      "image": "/assets/site_web.png"
+    },
+    {
+      "service": "Intranet",
+      "Price": 300000,
+      "image": "/assets/network.jpg"
+    },
+    {
+      "service": "Graphic Design",
+      "Price": 20000,
+      "image": "/assets/graphic.jpg"
+    },
+    {
+      "service": "Digital Marketing",
+      "Price": 50000,
+      "image": "/assets/digital-marketing.jpg"
+    }
+  ],
+
+  "slider": [
+    {
+      "name": "slide6",
+      "url": "/assets/medium-shot-man-wearing-vr-glasses.jpg"
+    },
+    {
+      "name": "slide1",
+      "url": "/assets/slide (1).jpg"
+    },
+    {
+      "name": "slide2",
+      "url": "/assets/slide (2).jpg"
+    },
+    {
+      "name": "slide3",
+      "url": "/assets/slide (3).jpg"
+    },
+    {
+      "name": "slide4",
+      "url": "/assets/slide (4).jpg"
+    },
+    {
+      "name": "slide5",
+      "url": "/assets/slide (5).jpg"
+    }
+  ],
+
+  "My_Services": [
+    {
+      "name": "💻 Web Development",
+      "logo": "/assets/Web Development.jpg",
+      "description": "I create dynamic, high-performing, and responsive websites using modern technologies. From custom web apps to content management systems, I build solutions tailored to your business goals and optimized for performance and security."
+    },
+    {
+      "name": "🎨 Web Design",
+      "logo": "/assets/Web Design.jpg",
+      "description": "I design visually compelling and user-friendly interfaces that provide an intuitive and engaging experience. My designs combine aesthetics and usability, ensuring your brand leaves a lasting impression across all devices."
+    },
+    {
+      "name": "🖌️ Graphic Design",
+      "logo": "/assets/Graphic Design.jpg",
+      "description": "I craft powerful visual content—from logos to marketing materials—that communicates your brand’s identity clearly and effectively. My focus is on creative design that elevates your image and connects with your audience."
+    },
+    {
+      "name": "🛠️ IT Support",
+      "logo": "/assets/IT Support.jpg",
+      "description": "I provide reliable IT assistance for software, hardware, and network issues. Whether it's troubleshooting, system setup, or technical advice, I ensure your technology runs smoothly so you can stay focused on your goals."
+    }
+  ],
+
+  "portfolio": [
+    {
+      "company": "Scolarkit",
+      "link": "www.scolarkit.com",
+      "website": "www.scolarkit.com",
+      "image": "/assets/portfolio/scolarkit.png"
+    },
+    {
+      "company": "Doungue Law Firm",
+      "link": "www.dounguelawfirm.com",
+      "website": "www.dounguelawfirm.com",
+      "image": "/assets/portfolio/dounguelaw.png"
+    },
+    {
+      "company": "Le Best Hotel",
+      "link": "www.lebesthotel.com",
+      "website": "www.lebesthotel.com",
+      "image": "/assets/portfolio/lebesthotel.png"
+    },
+    {
+      "company": "OABA",
+      "link": "www.oaba-org.com",
+      "website": "www.oaba-org.com",
+      "image": "/assets/portfolio/oaba.png"
+    },
+    {
+      "company": "APPE",
+      "link": "www.appecameroun.org",
+      "website": "www.appecameroun.org",
+      "image": "/assets/portfolio/appe.png"
+    },
+    {
+      "company": "Proges Market",
+      "link": "www.progesmarket.com",
+      "website": "www.progesmarket.com",
+      "image": "/assets/portfolio/progesmarket.png"
+    },
+    {
+      "company": "Geos For Future",
+      "link": "www.geosforfuture.com",
+      "website": "www.geosforfuture.com",
+      "image": "/assets/portfolio/geosforfuture.png"
+    },
+    {
+      "company": "Bytescorp",
+      "link": "www.bytes-corp.com",
+      "website": "www.bytes-corp.com",
+      "image": "/assets/portfolio/bytescorp.png"
+    }
+  ],
+
+  "education": [
+    {
+      "diploma": "MASTER’S DEGREE FIRST YEAR COMPUTER SCIENCE",
+      "school": "Protestant University of Central Africa Cameroon",
+      "year": 2022,
+      "content": "Software Development, Programming,Databases Administration, Networking, Web development, Analysis"
+    },
+    {
+      "diploma": "WEB DEVELOPMENT TRAINING",
+      "school": "Optima Corporation Cameroon",
+      "year": 2021,
+      "content": "Web Development, Web Design, Graphic Design, Social Media Marketing"
+    },
+    {
+      "diploma": "PROFESSIONAL BACHELOR'S DEGREE",
+      "school": "Protestant University of Central Africa Cameroon",
+      "year": 2018,
+      "content": "Software Development, Programming,Databases Administration, Networking, Web development, Analysis"
+    },
+    {
+      "diploma": "WORDPRESS WEB DEVELOPMENT TRAINING",
+      "school": "Scitis Tech Cameroon",
+      "year": 2015,
+      "content": "Design, Development and Deployment of Websites with WordPress"
+    }
+  ]
+
+}

@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<!-- Portfolio Container -->
+<div class="container py-5" data-aos="zoom-in">
+    <h2 class="mb-4">My Portfolio</h2>
+    <h4>My Work, Your Inspiration</h4>
+    <p>Welcome to my portfolio — a showcase of projects I've crafted with passion, precision, and purpose. 
+        Each work reflects my commitment to quality, creativity, and problem-solving. From web applications to graphic designs, 
+        these projects highlight my skills, adaptability, and the value I bring to every collaboration.</p>
+    <div id="portfolio-grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <!-- Les cartes seront injectées ici -->
+    </div>
+</div>
+
+<!-- Script d'injection -->
+<script>
+    const portfolioData = [
+      {
+        company: "Scolarkit",
+        link: "www.scolarkit.com",
+        image: "/assets/portfolio/scolarkit.png"
+      },
+      {
+        company: "Doungue Law Firm",
+        link: "www.dounguelawfirm.com",
+        image: "/assets/portfolio/dounguelaw.png"
+      },
+      {
+        company: "Le Best Hotel",
+        link: "www.lebesthotel.com",
+        image: "/assets/portfolio/lebesthotel.png"
+      },
+      {
+        company: "OABA",
+        link: "www.oaba-org.com",
+        image: "/assets/portfolio/oaba.png"
+      },
+      {
+        company: "APPE",
+        link: "www.appecameroun.org",
+        image: "/assets/portfolio/appe.png"
+      },
+      {
+        company: "Proges Market",
+        link: "www.progesmarket.com",
+        image: "/assets/portfolio/progesmarket.png"
+      },
+      {
+        company: "Geos For Future",
+        link: "www.geosforfuture.com",
+        image: "/assets/portfolio/geosforfuture.png"
+      },
+      {
+        company: "Bytescorp",
+        link: "www.bytes-corp.com",
+        image: "/assets/portfolio/bytescorp.png"
+      }
+    ];
+
+    const grid = document.getElementById("portfolio-grid");
+
+    portfolioData.forEach(project => {
+      const div = document.createElement("div");
+      div.className = "col";
+      div.innerHTML = `
+        <div class="card h-100 shadow-lg border-0">
+          <img src="${project.image}" alt="${project.company}" class="card-img-top" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column align-items-center justify-content-center gap-3">
+            <h5 class="card-title text-center">${project.company}</h5>
+            <a href="https://${project.link}" target="_blank">${project.link}</a>
+            <a href="https://${project.link}" target="_blank" class="btn btn-primary mt-auto w-100">Visit Website</a>
+          </div>
+        </div>
+      `;
+      grid.appendChild(div);
+    });
+</script>
+
+
+@*follow me*@
+<div class="container-fluid shadow-lg p-5 rounded-3 align-items-center justify-content-between gap-4 text-center" style="background:#203D60" data-aos="zoom-out-left">
+    <div class="sectionName text-white text-center"><h3 class="text-center">Follow <span class="fw-bold" style="color:#2E86C1">Me</span></h3></div>
+    <h4 class="text-white-50">Stay connected!</h4>
+    <p class="text-white-50">
+        Follow me on social media to discover my latest projects, design inspirations, and tech updates.
+        Let’s build something great together!
+    </p>
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <a href="https://github.com/Boska40" target="_blank" class="text-dark fs-3">
+            Github <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/stephane-tsala/" target="_blank" class="text-primary fs-3">
+            LinkedIn <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://web.facebook.com/stephane.boska" target="_blank" class="text-primary fs-3">
+            Facebook <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/stephane.boska/" target="_blank" class="text-danger fs-3">
+            Instagram <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</div>

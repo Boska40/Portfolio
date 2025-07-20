@@ -1,0 +1,123 @@
+
+:root {
+    --primary-color: #203D60;
+    --secondary-color: #2E86C1;
+    --text-color: #17202A;
+    --red-color: #E74C3C;
+    --green-color: #1ABC9C;
+    --gray-color: #D0D3D4;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.main {
+    margin: 50px auto 0 auto;
+}
+.Hero {
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, var(--primary-color) 35%, var(--secondary-color) 75%);
+}
+
+.Work_environment {
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--text-color);
+}
+
+.testimonial {
+    margin-top: 20px;
+    padding: 10px;
+/*    background: #E74C3C;*/
+}
+
+.Technology_section_slide {
+    margin-top: 20px;
+    padding: 10px;
+    background-image: url('../assets/medium-shot-man-wearing-vr-glasses.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+  
+    .prices {
+       
+        background: var(--secondary-color);
+    }
+
+.follow_me {
+   
+    background: var(--text-color);
+}
+
+
+.toTopBtn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    right: 25px;
+    bottom: 18px;
+    z-index: 100;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #D0D3D4;
+    cursor: pointer;
+}
+.toTopBtn i{
+   font-size:30px;
+   color:var(--secondary-color);
+}
+
+.nav-link {
+    position: relative;
+    color: #333;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 0%;
+        background-color: #007bff;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active-link::after {
+        width: 100%;
+    }
+
+    .nav-link.active-link {
+        color: #2E86C1 !important;
+        font-weight: bold;
+    }

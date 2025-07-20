@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Services";
+}
+
+<div class="container my-5" data-aos="fade-up">
+    <div class="Boxheader">
+        <h2>What I Offer?</h2>
+        <p>I provide a wide range of digital services to help individuals and businesses build a strong online presence. 
+            Whether you need a custom website, an eye-catching design, or reliable IT support, 
+            I combine creativity and technical expertise to deliver solutions that are both effective and tailored to your goals. 
+            My mission is to turn your ideas into impactful digital experiences.</p>
+    </div>
+    <div class="row" id="servicesContainer">
+        <script>
+            fetch('/data/features.json')
+              .then(response => response.json())
+              .then(data => {
+                const services = data.My_Services;
+                const container = document.getElementById('servicesContainer');
+
+                services.forEach(service => {
+                  const col = document.createElement('div');
+                  col.className = 'col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4';
+
+                  col.innerHTML = `
+                    <div class="card shadow-sm rounded-4 text-center h-100">
+                      <img src="${service.logo}" class="card-img-top" alt="${service.name}" style="height: 200px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">${service.name}</h5>
+                        <p class="card-text" style="color:#203D60">${service.description}</p>
+                      </div>
+                    </div>
+                  `;
+
+                  container.appendChild(col);
+                });
+              })
+              .catch(error => console.error('Error loading services:', error));
+        </script>
+
+    </div>
+</div>
+
+@*follow me*@
+<div class="container-fluid shadow-lg p-5 rounded-3 align-items-center justify-content-between gap-4 text-center" style="background:#203D60" data-aos="fade-right">
+    <div class="sectionName text-white text-center"><h3 class="text-center">Follow <span class="fw-bold" style="color:#2E86C1">Me</span></h3></div>
+    <h4 class="text-white-50">Stay connected!</h4>
+    <p class="text-white-50">
+        Follow me on social media to discover my latest projects, design inspirations, and tech updates.
+        Let’s build something great together!
+    </p>
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <a href="https://github.com/Boska40" target="_blank" class="text-dark fs-3">
+            Github <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/stephane-tsala/" target="_blank" class="text-primary fs-3">
+            LinkedIn <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://web.facebook.com/stephane.boska" target="_blank" class="text-primary fs-3">
+            Facebook <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/stephane.boska/" target="_blank" class="text-danger fs-3">
+            Instagram <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</div>

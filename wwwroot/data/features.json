@@ -149,32 +149,7 @@
     }
   ],
 
-  "slider": [
-    {
-      "name": "slide6",
-      "url": "/assets/medium-shot-man-wearing-vr-glasses.jpg"
-    },
-    {
-      "name": "slide1",
-      "url": "/assets/slide (1).jpg"
-    },
-    {
-      "name": "slide2",
-      "url": "/assets/slide (2).jpg"
-    },
-    {
-      "name": "slide3",
-      "url": "/assets/slide (3).jpg"
-    },
-    {
-      "name": "slide4",
-      "url": "/assets/slide (4).jpg"
-    },
-    {
-      "name": "slide5",
-      "url": "/assets/slide (5).jpg"
-    }
-  ],
+ 
 
   "My_Services": [
     {
@@ -200,6 +175,12 @@
   ],
 
   "portfolio": [
+    {
+      "company": "Incredible India",
+      "link": "www.incredibleindia-cm.com",
+      "website": "www.incredibleindia-cm.com",
+      "image": "/assets/portfolio/Logo Incredible India.png"
+    },
     {
       "company": "Scolarkit",
       "link": "www.scolarkit.com",
